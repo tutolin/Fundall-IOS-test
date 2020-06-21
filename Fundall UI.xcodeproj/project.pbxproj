@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE81CC3B249E78EB0087C080 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81CC3A249E78EB0087C080 /* CustomTextField.swift */; };
 		CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06E8249E3D650099766C /* AppDelegate.swift */; };
 		CE9A06EB249E3D650099766C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EA249E3D650099766C /* SceneDelegate.swift */; };
 		CE9A06ED249E3D650099766C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EC249E3D650099766C /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE81CC3A249E78EB0087C080 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE9A06E5249E3D650099766C /* Fundall UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A06E8249E3D650099766C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9A06EA249E3D650099766C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE81CC39249E789A0087C080 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE81CC3A249E78EB0087C080 /* CustomTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		CE9A06DC249E3D650099766C = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		CE9A06E7249E3D650099766C /* Fundall UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE81CC39249E789A0087C080 /* Views */,
 				CE9A06E8249E3D650099766C /* AppDelegate.swift */,
 				CE9A06EA249E3D650099766C /* SceneDelegate.swift */,
 				CE9A06EC249E3D650099766C /* ViewController.swift */,
@@ -138,6 +149,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE81CC3B249E78EB0087C080 /* CustomTextField.swift in Sources */,
 				CE9A06ED249E3D650099766C /* ViewController.swift in Sources */,
 				CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */,
 				CE9A06EB249E3D650099766C /* SceneDelegate.swift in Sources */,
