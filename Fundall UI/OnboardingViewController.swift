@@ -15,6 +15,10 @@ class OnboardingViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func startPressed(_ sender: Any) {
+        if let signedInVC = storyboard?.instantiateViewController(withIdentifier: "SignedInVC") as? SignedInViewController{
+        self.present(signedInVC, animated: true, completion: nil)
+    }
+    }
 }
 

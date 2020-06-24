@@ -12,6 +12,8 @@ class CardSelectionCell: UITableViewCell {
 
     @IBOutlet weak var cardSelectionCollectionView: UICollectionView!
     
+    let cardName = ["Lifestyle Pro","Lifestyle Premium", "Lifestyle Business"]
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -37,7 +39,7 @@ func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection s
 
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardSelectionCollectionCell", for: indexPath) as! CardSelectionCollectionCell
-    
+    cell.cardName.text = cardName[indexPath.row]
     
     return cell
 }
@@ -48,6 +50,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 
 class CardSelectionCollectionCell: UICollectionViewCell {
 
+    @IBOutlet weak var cardName: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

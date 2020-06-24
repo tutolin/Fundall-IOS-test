@@ -27,4 +27,13 @@ class RegisterViewController: UIViewController {
     }
     */
 
+    @IBAction func backPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    @IBAction func loginPressed(_ sender: Any) {
+        if let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginViewController{
+                   self.present(loginVC, animated: true, completion: nil)
+        }
+        
+    }
 }

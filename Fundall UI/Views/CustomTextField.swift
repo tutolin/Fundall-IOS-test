@@ -13,6 +13,9 @@ import UIKit
 class CustomTextField: UITextField {
     
     let padding = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    let textpadding = UIEdgeInsets(top: 0, left: 25, bottom: 0, right: 5)
+       
+       
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -34,7 +37,7 @@ class CustomTextField: UITextField {
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+        return bounds.inset(by: textpadding)
     }
     
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
@@ -42,7 +45,7 @@ class CustomTextField: UITextField {
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.inset(by: padding)
+        return bounds.inset(by: textpadding)
     }
     
     override func leftViewRect(forBounds bounds: CGRect) -> CGRect {
@@ -75,7 +78,7 @@ class CustomTextField: UITextField {
         border.borderWidth = width
         self.layer.addSublayer(border)
         self.layer.masksToBounds = true
-        self.textColor = #colorLiteral(red: 0.2980392157, green: 0.9098039216, blue: 0.5843137255, alpha: 1)
+        self.textColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
         self.attributedPlaceholder = NSAttributedString(string: self.placeholder != nil ? self.placeholder! : "", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.5921568627, green: 0.5921568627, blue: 0.5921568627, alpha: 1) ])
         
         if let image = leftImage {

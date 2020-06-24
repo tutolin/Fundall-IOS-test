@@ -9,6 +9,8 @@
 import UIKit
 
 class CardCell: UITableViewCell {
+    let cardName = ["Fundall Lifestyle Card","Rave Dollar Card", "Providus Card"]
+
 
     @IBOutlet weak var cardCollectionView: UICollectionView!
     
@@ -39,6 +41,7 @@ func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection s
 
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCollectionCell", for: indexPath) as! CardCollectionCell
+    cell.cardsName.text = cardName[indexPath.row]
     
     
     return cell

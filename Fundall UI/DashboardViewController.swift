@@ -9,6 +9,11 @@
 import UIKit
 
 class DashboardViewController: UIViewController {
+    
+    let transactionImage = [UIImage(named: "Group 49"), UIImage(named: "Group 50"),UIImage(named: "Group 51"),UIImage(named: "Group 52")]
+    let transactionAmount = ["₦ 130","₦ 100", "₦ 35", "₦ 30"]
+    let transactionName = ["Tobiloba","Grocery", "Shopping", "Alvera"]
+    let transactionTime = ["Just now","12:00AM", "5:00AM", "3:00PM"]
 
 enum CardState {
     case expanded
@@ -53,6 +58,13 @@ enum CardState {
             
               setupCard()
         }
+    
+    @IBAction func cardRequestPressed(_ sender: Any) {
+        if let cardVC = storyboard?.instantiateViewController(withIdentifier: "CardVC") as? CardViewController{
+                   self.present(cardVC, animated: true, completion: nil)
+        }
+    }
+    
         
         func setupCard() {
             visualEffectView = UIVisualEffectView()
@@ -179,12 +191,24 @@ enum CardState {
     }
 
 extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
+    
+
+    
+    
     func numberOfSections(in tableView: UITableView) -> Int {
            return 3
        }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        if section == 2 {
+            return 4
+
+        }
+            
+        else {
+            return 1
+
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -201,6 +225,10 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
      
         else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTableViewCell") as? TodayTableViewCell
+            cell?.transactionImage.image = transactionImage[indexPath.row]
+            cell?.transactionAmount.text = transactionAmount[indexPath.row]
+            cell?.transactionName.text = transactionName[indexPath.row]
+            cell?.transactionTime.text = transactionTime[indexPath.row]
             
             return cell ?? UITableViewCell()
             

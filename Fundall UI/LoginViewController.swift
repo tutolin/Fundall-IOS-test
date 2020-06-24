@@ -26,5 +26,14 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func backPressed(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func registerPressed(_ sender: Any) {
+        if let registerVC = storyboard?.instantiateViewController(withIdentifier: "RegisterVC") as? RegisterViewController{
+                          self.present(registerVC, animated: true, completion: nil)
+               }
+        
+    }
 }
