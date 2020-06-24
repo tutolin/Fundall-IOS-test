@@ -15,9 +15,11 @@ enum CardState {
     case collapsed
 }
 
+    @IBOutlet weak var bottomSheetTableview: UITableView!
     @IBOutlet var cardViewController: UIView!
     @IBOutlet weak var handleArea: UIView!
-    
+    @IBOutlet weak var topBar: UIView!
+    @IBOutlet weak var cardView: UIView!
     
     var visualEffectView:UIVisualEffectView!
     
@@ -42,10 +44,12 @@ enum CardState {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-          
-           
-            cardHeight = (80/100) * (safeAreaHeight)
-            cardHandleAreaHeight = (40/100) * (safeAreaHeight)
+//            bottomSheetTableview.delegate = self
+//            bottomSheetTableview.dataSource = self
+//          
+            cardHeight = (safeAreaHeight - self.topBar.frame.height) + 5
+//            cardHeight = (80/100) * (safeAreaHeight)
+            cardHandleAreaHeight = (safeAreaHeight - self.cardView.frame.height) + 100
               setupCard()
         }
         
@@ -122,10 +126,10 @@ enum CardState {
                     switch state {
                     case .expanded:
                         self.cardViewController.layer.cornerRadius = 50
-                        self.handleArea.layer.cornerRadius = 50
+                       
                     case .collapsed:
                         self.cardViewController.layer.cornerRadius = 50
-                        self.handleArea.layer.cornerRadius = 50
+                       
                     }
                 }
                 
@@ -133,12 +137,14 @@ enum CardState {
                 runningAnimations.append(cornerRadiusAnimator)
                 
                 let blurAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 1) {
-                    switch state {
-                    case .expanded:
-                        self.visualEffectView.effect = UIBlurEffect(style: .dark)
-                    case .collapsed:
-                        self.visualEffectView.effect = nil
-                    }
+                     switch state {
+                    //                    case .expanded:
+                    //                        self.visualEffectView.effect = UIBlurEffect(style: .dark)
+                                        case .collapsed:
+                                            self.visualEffectView.effect = nil
+                                        default:
+                                            break
+                                        }
                 }
                 
                 blurAnimator.startAnimation()
@@ -170,3 +176,38 @@ enum CardState {
         }
         
     }
+//
+//extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//           return 3
+//       }
+//
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 1
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        if indexPath.section == 0 {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell") as? CardCell
+//            return cell ?? UITableViewCell()
+//        }
+//        else if indexPath.section == 1 {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTitleTableViewCell") as? TodayTitleTableViewCell
+//
+//            return cell ?? UITableViewCell()
+//        }
+//
+//
+//        else {
+//            let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTableViewCell") as? TodayTableViewCell
+//
+//            return cell ?? UITableViewCell()
+//
+//        }
+//    }
+//
+//
+//
+//
+//
+//}

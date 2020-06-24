@@ -2,6 +2,19 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>FoundersGrotesk-Bold.otf</string>
+		<string>FoundersGrotesk-BoldItalic.otf</string>
+		<string>FoundersGrotesk-Light.otf</string>
+		<string>FoundersGrotesk-LightItalic.otf</string>
+		<string>FoundersGrotesk-Medium.otf</string>
+		<string>FoundersGrotesk-MediumItalic.otf</string>
+		<string>FoundersGrotesk-Regular.otf</string>
+		<string>FoundersGrotesk-RegularItalic.otf</string>
+		<string>FoundersGrotesk-Semibold.otf</string>
+		<string>FoundersGrotesk-SemiboldItalic.otf</string>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

@@ -7,24 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE057A7524A2CF94009B8DDF /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE057A7424A2CF94009B8DDF /* CardCell.swift */; };
+		CE057A7724A2D707009B8DDF /* TodayTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE057A7624A2D707009B8DDF /* TodayTitleTableViewCell.swift */; };
+		CE057A7924A2D72B009B8DDF /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE057A7824A2D72B009B8DDF /* TodayTableViewCell.swift */; };
 		CE08DD0B24A0D34400D5A0B9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08DD0A24A0D34400D5A0B9 /* DashboardViewController.swift */; };
+		CE08DD2D24A15AD400D5A0B9 /* FoundersGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2524A15A9B00D5A0B9 /* FoundersGrotesk-Bold.otf */; };
+		CE08DD2E24A15AD800D5A0B9 /* FoundersGrotesk-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2A24A15A9B00D5A0B9 /* FoundersGrotesk-BoldItalic.otf */; };
+		CE08DD2F24A15ADB00D5A0B9 /* FoundersGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2424A15A9B00D5A0B9 /* FoundersGrotesk-Light.otf */; };
+		CE08DD3024A15AE800D5A0B9 /* FoundersGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2824A15A9B00D5A0B9 /* FoundersGrotesk-Medium.otf */; };
+		CE08DD3124A15AE800D5A0B9 /* FoundersGrotesk-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2624A15A9B00D5A0B9 /* FoundersGrotesk-MediumItalic.otf */; };
+		CE08DD3224A15AE800D5A0B9 /* FoundersGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2724A15A9B00D5A0B9 /* FoundersGrotesk-Regular.otf */; };
+		CE08DD3324A15AE800D5A0B9 /* FoundersGrotesk-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2C24A15A9B00D5A0B9 /* FoundersGrotesk-RegularItalic.otf */; };
+		CE08DD3424A15AE800D5A0B9 /* FoundersGrotesk-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2324A15A9A00D5A0B9 /* FoundersGrotesk-Semibold.otf */; };
+		CE08DD3524A15AE800D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2924A15A9B00D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf */; };
+		CE08DD3624A15AEB00D5A0B9 /* FoundersGrotesk-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2B24A15A9B00D5A0B9 /* FoundersGrotesk-LightItalic.otf */; };
+		CE098F3C24A2079300E5267F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE098F3B24A2079300E5267F /* RegisterViewController.swift */; };
+		CE098F3E24A207AF00E5267F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE098F3D24A207AF00E5267F /* LoginViewController.swift */; };
+		CE098F4224A2088200E5267F /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE098F4124A2088200E5267F /* CardViewController.swift */; };
+		CE098F4424A2094300E5267F /* SignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE098F4324A2094300E5267F /* SignedInViewController.swift */; };
+		CE4392E724A193510074C40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4392E624A193500074C40B /* Main.storyboard */; };
 		CE81CC3B249E78EB0087C080 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81CC3A249E78EB0087C080 /* CustomTextField.swift */; };
 		CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06E8249E3D650099766C /* AppDelegate.swift */; };
 		CE9A06EB249E3D650099766C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EA249E3D650099766C /* SceneDelegate.swift */; };
-		CE9A06ED249E3D650099766C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EC249E3D650099766C /* ViewController.swift */; };
-		CE9A06F0249E3D650099766C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A06EE249E3D650099766C /* Main.storyboard */; };
+		CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EC249E3D650099766C /* OnboardingViewController.swift */; };
 		CE9A06F2249E3D6A0099766C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9A06F1249E3D6A0099766C /* Assets.xcassets */; };
 		CE9A06F5249E3D6A0099766C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A06F3249E3D6A0099766C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE057A7424A2CF94009B8DDF /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		CE057A7624A2D707009B8DDF /* TodayTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTitleTableViewCell.swift; sourceTree = "<group>"; };
+		CE057A7824A2D72B009B8DDF /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
 		CE08DD0A24A0D34400D5A0B9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		CE08DD2324A15A9A00D5A0B9 /* FoundersGrotesk-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Semibold.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Semibold.otf"; sourceTree = "<group>"; };
+		CE08DD2424A15A9B00D5A0B9 /* FoundersGrotesk-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Light.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Light.otf"; sourceTree = "<group>"; };
+		CE08DD2524A15A9B00D5A0B9 /* FoundersGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Bold.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Bold.otf"; sourceTree = "<group>"; };
+		CE08DD2624A15A9B00D5A0B9 /* FoundersGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-MediumItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-MediumItalic.otf"; sourceTree = "<group>"; };
+		CE08DD2724A15A9B00D5A0B9 /* FoundersGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Regular.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Regular.otf"; sourceTree = "<group>"; };
+		CE08DD2824A15A9B00D5A0B9 /* FoundersGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Medium.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Medium.otf"; sourceTree = "<group>"; };
+		CE08DD2924A15A9B00D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-SemiboldItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		CE08DD2A24A15A9B00D5A0B9 /* FoundersGrotesk-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-BoldItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-BoldItalic.otf"; sourceTree = "<group>"; };
+		CE08DD2B24A15A9B00D5A0B9 /* FoundersGrotesk-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-LightItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-LightItalic.otf"; sourceTree = "<group>"; };
+		CE08DD2C24A15A9B00D5A0B9 /* FoundersGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-RegularItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
+		CE098F3B24A2079300E5267F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		CE098F3D24A207AF00E5267F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CE098F4124A2088200E5267F /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
+		CE098F4324A2094300E5267F /* SignedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInViewController.swift; sourceTree = "<group>"; };
+		CE4392E624A193500074C40B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CE81CC3A249E78EB0087C080 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		CE9A06E5249E3D650099766C /* Fundall UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A06E8249E3D650099766C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9A06EA249E3D650099766C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CE9A06EC249E3D650099766C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE9A06EF249E3D650099766C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CE9A06EC249E3D650099766C /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		CE9A06F1249E3D6A0099766C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9A06F4249E3D6A0099766C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9A06F6249E3D6A0099766C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -41,6 +75,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE057A7324A2CE6C009B8DDF /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE057A7424A2CF94009B8DDF /* CardCell.swift */,
+				CE057A7624A2D707009B8DDF /* TodayTitleTableViewCell.swift */,
+				CE057A7824A2D72B009B8DDF /* TodayTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE08DD2224A15A0300D5A0B9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE08DD2524A15A9B00D5A0B9 /* FoundersGrotesk-Bold.otf */,
+				CE08DD2A24A15A9B00D5A0B9 /* FoundersGrotesk-BoldItalic.otf */,
+				CE08DD2424A15A9B00D5A0B9 /* FoundersGrotesk-Light.otf */,
+				CE08DD2B24A15A9B00D5A0B9 /* FoundersGrotesk-LightItalic.otf */,
+				CE08DD2824A15A9B00D5A0B9 /* FoundersGrotesk-Medium.otf */,
+				CE08DD2624A15A9B00D5A0B9 /* FoundersGrotesk-MediumItalic.otf */,
+				CE08DD2724A15A9B00D5A0B9 /* FoundersGrotesk-Regular.otf */,
+				CE08DD2C24A15A9B00D5A0B9 /* FoundersGrotesk-RegularItalic.otf */,
+				CE08DD2324A15A9A00D5A0B9 /* FoundersGrotesk-Semibold.otf */,
+				CE08DD2924A15A9B00D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		CE81CC39249E789A0087C080 /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -68,15 +129,21 @@
 		CE9A06E7249E3D650099766C /* Fundall UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE057A7324A2CE6C009B8DDF /* Cell */,
+				CE08DD2224A15A0300D5A0B9 /* Fonts */,
 				CE81CC39249E789A0087C080 /* Views */,
 				CE9A06E8249E3D650099766C /* AppDelegate.swift */,
 				CE9A06EA249E3D650099766C /* SceneDelegate.swift */,
-				CE9A06EC249E3D650099766C /* ViewController.swift */,
-				CE9A06EE249E3D650099766C /* Main.storyboard */,
+				CE9A06EC249E3D650099766C /* OnboardingViewController.swift */,
 				CE9A06F1249E3D6A0099766C /* Assets.xcassets */,
+				CE4392E624A193500074C40B /* Main.storyboard */,
 				CE9A06F3249E3D6A0099766C /* LaunchScreen.storyboard */,
 				CE9A06F6249E3D6A0099766C /* Info.plist */,
 				CE08DD0A24A0D34400D5A0B9 /* DashboardViewController.swift */,
+				CE098F3B24A2079300E5267F /* RegisterViewController.swift */,
+				CE098F3D24A207AF00E5267F /* LoginViewController.swift */,
+				CE098F4124A2088200E5267F /* CardViewController.swift */,
+				CE098F4324A2094300E5267F /* SignedInViewController.swift */,
 			);
 			path = "Fundall UI";
 			sourceTree = "<group>";
@@ -139,9 +206,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE08DD3124A15AE800D5A0B9 /* FoundersGrotesk-MediumItalic.otf in Resources */,
+				CE08DD3624A15AEB00D5A0B9 /* FoundersGrotesk-LightItalic.otf in Resources */,
 				CE9A06F5249E3D6A0099766C /* LaunchScreen.storyboard in Resources */,
+				CE08DD2E24A15AD800D5A0B9 /* FoundersGrotesk-BoldItalic.otf in Resources */,
+				CE08DD3224A15AE800D5A0B9 /* FoundersGrotesk-Regular.otf in Resources */,
+				CE08DD3324A15AE800D5A0B9 /* FoundersGrotesk-RegularItalic.otf in Resources */,
+				CE08DD2F24A15ADB00D5A0B9 /* FoundersGrotesk-Light.otf in Resources */,
+				CE4392E724A193510074C40B /* Main.storyboard in Resources */,
 				CE9A06F2249E3D6A0099766C /* Assets.xcassets in Resources */,
-				CE9A06F0249E3D650099766C /* Main.storyboard in Resources */,
+				CE08DD2D24A15AD400D5A0B9 /* FoundersGrotesk-Bold.otf in Resources */,
+				CE08DD3524A15AE800D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf in Resources */,
+				CE08DD3424A15AE800D5A0B9 /* FoundersGrotesk-Semibold.otf in Resources */,
+				CE08DD3024A15AE800D5A0B9 /* FoundersGrotesk-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,10 +229,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE098F3E24A207AF00E5267F /* LoginViewController.swift in Sources */,
 				CE81CC3B249E78EB0087C080 /* CustomTextField.swift in Sources */,
-				CE9A06ED249E3D650099766C /* ViewController.swift in Sources */,
+				CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */,
 				CE08DD0B24A0D34400D5A0B9 /* DashboardViewController.swift in Sources */,
+				CE057A7724A2D707009B8DDF /* TodayTitleTableViewCell.swift in Sources */,
+				CE098F4224A2088200E5267F /* CardViewController.swift in Sources */,
+				CE057A7524A2CF94009B8DDF /* CardCell.swift in Sources */,
+				CE057A7924A2D72B009B8DDF /* TodayTableViewCell.swift in Sources */,
+				CE098F3C24A2079300E5267F /* RegisterViewController.swift in Sources */,
 				CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */,
+				CE098F4424A2094300E5267F /* SignedInViewController.swift in Sources */,
 				CE9A06EB249E3D650099766C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,14 +247,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE9A06EE249E3D650099766C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE9A06EF249E3D650099766C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE9A06F3249E3D6A0099766C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -232,7 +308,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -286,7 +362,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
