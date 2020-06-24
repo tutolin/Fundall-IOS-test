@@ -44,12 +44,13 @@ enum CardState {
         
         override func viewDidLoad() {
             super.viewDidLoad()
-//            bottomSheetTableview.delegate = self
-//            bottomSheetTableview.dataSource = self
-//          
-            cardHeight = (safeAreaHeight - self.topBar.frame.height) + 5
-//            cardHeight = (80/100) * (safeAreaHeight)
-            cardHandleAreaHeight = (safeAreaHeight - self.cardView.frame.height) + 100
+            bottomSheetTableview.delegate = self
+            bottomSheetTableview.dataSource = self
+          
+            cardHeight = (safeAreaHeight - self.topBar.frame.height) + 35
+            //            cardHeight = (80/100) * (safeArHeight)
+            cardHandleAreaHeight = (safeAreaHeight - self.cardView.frame.height) - 120
+            
               setupCard()
         }
         
@@ -176,38 +177,38 @@ enum CardState {
         }
         
     }
-//
-//extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//           return 3
-//       }
-//
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 1
-//    }
-//
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        if indexPath.section == 0 {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell") as? CardCell
-//            return cell ?? UITableViewCell()
-//        }
-//        else if indexPath.section == 1 {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTitleTableViewCell") as? TodayTitleTableViewCell
-//
-//            return cell ?? UITableViewCell()
-//        }
-//
-//
-//        else {
-//            let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTableViewCell") as? TodayTableViewCell
-//
-//            return cell ?? UITableViewCell()
-//
-//        }
-//    }
-//
-//
-//
-//
-//
-//}
+
+extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+           return 3
+       }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CardCell") as? CardCell
+            return cell ?? UITableViewCell()
+        }
+        else if indexPath.section == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTitleTableViewCell") as? TodayTitleTableViewCell
+           
+            return cell ?? UITableViewCell()
+        }
+            
+     
+        else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TodayTableViewCell") as? TodayTableViewCell
+            
+            return cell ?? UITableViewCell()
+            
+        }
+    }
+    
+    
+    
+    
+    
+}

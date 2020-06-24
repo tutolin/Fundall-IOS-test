@@ -32,6 +32,8 @@
 		CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EC249E3D650099766C /* OnboardingViewController.swift */; };
 		CE9A06F2249E3D6A0099766C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9A06F1249E3D6A0099766C /* Assets.xcassets */; };
 		CE9A06F5249E3D6A0099766C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9A06F3249E3D6A0099766C /* LaunchScreen.storyboard */; };
+		CEAE73E224A3B0CA0096F7B3 /* CardSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE73E124A3B0CA0096F7B3 /* CardSelectionCell.swift */; };
+		CEAE73E424A3B0FD0096F7B3 /* CardListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAE73E324A3B0FD0096F7B3 /* CardListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		CE9A06F1249E3D6A0099766C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9A06F4249E3D6A0099766C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9A06F6249E3D6A0099766C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEAE73E124A3B0CA0096F7B3 /* CardSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSelectionCell.swift; sourceTree = "<group>"; };
+		CEAE73E324A3B0FD0096F7B3 /* CardListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,8 @@
 				CE057A7424A2CF94009B8DDF /* CardCell.swift */,
 				CE057A7624A2D707009B8DDF /* TodayTitleTableViewCell.swift */,
 				CE057A7824A2D72B009B8DDF /* TodayTableViewCell.swift */,
+				CEAE73E124A3B0CA0096F7B3 /* CardSelectionCell.swift */,
+				CEAE73E324A3B0FD0096F7B3 /* CardListCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -234,9 +240,11 @@
 				CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */,
 				CE08DD0B24A0D34400D5A0B9 /* DashboardViewController.swift in Sources */,
 				CE057A7724A2D707009B8DDF /* TodayTitleTableViewCell.swift in Sources */,
+				CEAE73E424A3B0FD0096F7B3 /* CardListCell.swift in Sources */,
 				CE098F4224A2088200E5267F /* CardViewController.swift in Sources */,
 				CE057A7524A2CF94009B8DDF /* CardCell.swift in Sources */,
 				CE057A7924A2D72B009B8DDF /* TodayTableViewCell.swift in Sources */,
+				CEAE73E224A3B0CA0096F7B3 /* CardSelectionCell.swift in Sources */,
 				CE098F3C24A2079300E5267F /* RegisterViewController.swift in Sources */,
 				CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */,
 				CE098F4424A2094300E5267F /* SignedInViewController.swift in Sources */,
