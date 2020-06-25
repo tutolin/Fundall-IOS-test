@@ -1353,7 +1353,7 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VWd-rx-Fgq">
-                            <rect key="frame" x="42" y="95" width="289" height="210.5"/>
+                            <rect key="frame" x="42" y="98.5" width="289" height="203"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63d-SB-RQM">
                                     <rect key="frame" x="259" y="0.0" width="30" height="30"/>
@@ -1373,7 +1373,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="quf-dk-tnm">
-                                    <rect key="frame" x="50" y="165.5" width="189" height="25"/>
+                                    <rect key="frame" x="50" y="158" width="189" height="25"/>
                                     <color key="backgroundColor" red="0.29803921568627451" green="0.90980392156862744" blue="0.58431372549019611" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="25" id="5wl-Z1-EhD"/>
@@ -1387,16 +1387,16 @@
                                     </connections>
                                 </button>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="Q4t-1a-sfN">
-                                    <rect key="frame" x="50" y="65" width="189" height="65.5"/>
+                                    <rect key="frame" x="50" y="65" width="189" height="58"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yippooo!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqO-4s-Piv">
-                                            <rect key="frame" x="64.5" y="0.0" width="60" height="17.5"/>
+                                            <rect key="frame" x="66" y="0.0" width="57" height="15"/>
                                             <fontDescription key="fontDescription" name="FoundersGrotesk-Semibold" family="Founders Grotesk" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Card Request Successful, Welcome to Tommorrow" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLe-Tb-Q5M">
-                                            <rect key="frame" x="5.5" y="30.5" width="178.5" height="35"/>
+                                            <rect key="frame" x="11.5" y="28" width="166" height="30"/>
                                             <fontDescription key="fontDescription" name="FoundersGrotesk-Semibold" family="Founders Grotesk" pointSize="15"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
