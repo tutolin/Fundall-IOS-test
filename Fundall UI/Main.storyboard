@@ -574,7 +574,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQa-7y-JL4">
                                 <rect key="frame" x="40" y="463" width="295" height="29"/>
                                 <color key="backgroundColor" red="0.29803921570000003" green="0.90980392160000001" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="FoundersGrotesk-Semibold" family="Founders Grotesk" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="FoundersGrotesk-Medium" family="Founders Grotesk" pointSize="17"/>
                                 <state key="normal" title="LOG IN">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>

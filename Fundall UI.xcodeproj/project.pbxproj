@@ -26,6 +26,16 @@
 		CE8E174224A503AF008EC6FE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E174124A503AF008EC6FE /* RegisterView.swift */; };
 		CE8E174424A503CC008EC6FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E174324A503CC008EC6FE /* LoginView.swift */; };
 		CE8E174624A5040A008EC6FE /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E174524A5040A008EC6FE /* LoginProvider.swift */; };
+		CE8E175224A50C74008EC6FE /* FoundersGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E174A24A507AC008EC6FE /* FoundersGrotesk-Bold.otf */; };
+		CE8E175324A50C77008EC6FE /* FoundersGrotesk-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E174B24A507AC008EC6FE /* FoundersGrotesk-BoldItalic.otf */; };
+		CE8E175424A50C7A008EC6FE /* FoundersGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E174C24A507AC008EC6FE /* FoundersGrotesk-Light.otf */; };
+		CE8E175524A50C7D008EC6FE /* FoundersGrotesk-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E174824A507AB008EC6FE /* FoundersGrotesk-LightItalic.otf */; };
+		CE8E175624A50C7F008EC6FE /* FoundersGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E174E24A507AC008EC6FE /* FoundersGrotesk-Medium.otf */; };
+		CE8E175724A50C82008EC6FE /* FoundersGrotesk-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E174F24A507AD008EC6FE /* FoundersGrotesk-MediumItalic.otf */; };
+		CE8E175824A50C84008EC6FE /* FoundersGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E174924A507AB008EC6FE /* FoundersGrotesk-Regular.otf */; };
+		CE8E175924A50C87008EC6FE /* FoundersGrotesk-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E175124A507AD008EC6FE /* FoundersGrotesk-RegularItalic.otf */; };
+		CE8E175A24A50C8A008EC6FE /* FoundersGrotesk-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E174D24A507AC008EC6FE /* FoundersGrotesk-Semibold.otf */; };
+		CE8E175B24A50C8D008EC6FE /* FoundersGrotesk-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE8E175024A507AD008EC6FE /* FoundersGrotesk-SemiboldItalic.otf */; };
 		CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06E8249E3D650099766C /* AppDelegate.swift */; };
 		CE9A06EB249E3D650099766C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EA249E3D650099766C /* SceneDelegate.swift */; };
 		CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EC249E3D650099766C /* OnboardingViewController.swift */; };
@@ -292,8 +302,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE8E175A24A50C8A008EC6FE /* FoundersGrotesk-Semibold.otf in Resources */,
+				CE8E175524A50C7D008EC6FE /* FoundersGrotesk-LightItalic.otf in Resources */,
+				CE8E175B24A50C8D008EC6FE /* FoundersGrotesk-SemiboldItalic.otf in Resources */,
 				CE9A06F5249E3D6A0099766C /* LaunchScreen.storyboard in Resources */,
+				CE8E175324A50C77008EC6FE /* FoundersGrotesk-BoldItalic.otf in Resources */,
+				CE8E175424A50C7A008EC6FE /* FoundersGrotesk-Light.otf in Resources */,
+				CE8E175724A50C82008EC6FE /* FoundersGrotesk-MediumItalic.otf in Resources */,
+				CE8E175924A50C87008EC6FE /* FoundersGrotesk-RegularItalic.otf in Resources */,
+				CE8E175624A50C7F008EC6FE /* FoundersGrotesk-Medium.otf in Resources */,
+				CE8E175824A50C84008EC6FE /* FoundersGrotesk-Regular.otf in Resources */,
 				CE4392E724A193510074C40B /* Main.storyboard in Resources */,
+				CE8E175224A50C74008EC6FE /* FoundersGrotesk-Bold.otf in Resources */,
 				CE9A06F2249E3D6A0099766C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
