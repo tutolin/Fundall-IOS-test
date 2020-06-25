@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -28,6 +28,10 @@
 		CE098F4424A2094300E5267F /* SignedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE098F4324A2094300E5267F /* SignedInViewController.swift */; };
 		CE4392E724A193510074C40B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4392E624A193500074C40B /* Main.storyboard */; };
 		CE81CC3B249E78EB0087C080 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE81CC3A249E78EB0087C080 /* CustomTextField.swift */; };
+		CE8E16F724A4E8FB008EC6FE /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E16F624A4E8FB008EC6FE /* extension.swift */; };
+		CE8E16FA24A4F30E008EC6FE /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E16F924A4F30E008EC6FE /* ErrorModel.swift */; };
+		CE8E16FC24A4F325008EC6FE /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E16FB24A4F325008EC6FE /* LoginModel.swift */; };
+		CE8E16FE24A4F344008EC6FE /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E16FD24A4F344008EC6FE /* RegisterModel.swift */; };
 		CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06E8249E3D650099766C /* AppDelegate.swift */; };
 		CE9A06EB249E3D650099766C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EA249E3D650099766C /* SceneDelegate.swift */; };
 		CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EC249E3D650099766C /* OnboardingViewController.swift */; };
@@ -61,6 +65,10 @@
 		CE098F4324A2094300E5267F /* SignedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignedInViewController.swift; sourceTree = "<group>"; };
 		CE4392E624A193500074C40B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CE81CC3A249E78EB0087C080 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		CE8E16F624A4E8FB008EC6FE /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		CE8E16F924A4F30E008EC6FE /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
+		CE8E16FB24A4F325008EC6FE /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		CE8E16FD24A4F344008EC6FE /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
 		CE9A06E5249E3D650099766C /* Fundall UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A06E8249E3D650099766C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9A06EA249E3D650099766C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +137,37 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		CE8E16F524A4E8DC008EC6FE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E16F624A4E8FB008EC6FE /* extension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CE8E16F824A4F2D0008EC6FE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E16F924A4F30E008EC6FE /* ErrorModel.swift */,
+				CE8E16FB24A4F325008EC6FE /* LoginModel.swift */,
+				CE8E16FD24A4F344008EC6FE /* RegisterModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE8E173C24A501B0008EC6FE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE08DD0A24A0D34400D5A0B9 /* DashboardViewController.swift */,
+				CE098F3B24A2079300E5267F /* RegisterViewController.swift */,
+				CE098F3D24A207AF00E5267F /* LoginViewController.swift */,
+				CE098F4124A2088200E5267F /* CardViewController.swift */,
+				CE098F4324A2094300E5267F /* SignedInViewController.swift */,
+				CE9A06EC249E3D650099766C /* OnboardingViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		CE9A06DC249E3D650099766C = {
 			isa = PBXGroup;
 			children = (
@@ -150,21 +189,18 @@
 		CE9A06E7249E3D650099766C /* Fundall UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE8E173C24A501B0008EC6FE /* ViewController */,
+				CE8E16F824A4F2D0008EC6FE /* Model */,
+				CE8E16F524A4E8DC008EC6FE /* Utility */,
 				CE057A7324A2CE6C009B8DDF /* Cell */,
 				CE08DD2224A15A0300D5A0B9 /* Fonts */,
 				CE81CC39249E789A0087C080 /* Views */,
 				CE9A06E8249E3D650099766C /* AppDelegate.swift */,
 				CE9A06EA249E3D650099766C /* SceneDelegate.swift */,
-				CE9A06EC249E3D650099766C /* OnboardingViewController.swift */,
 				CE9A06F1249E3D6A0099766C /* Assets.xcassets */,
 				CE4392E624A193500074C40B /* Main.storyboard */,
 				CE9A06F3249E3D6A0099766C /* LaunchScreen.storyboard */,
 				CE9A06F6249E3D6A0099766C /* Info.plist */,
-				CE08DD0A24A0D34400D5A0B9 /* DashboardViewController.swift */,
-				CE098F3B24A2079300E5267F /* RegisterViewController.swift */,
-				CE098F3D24A207AF00E5267F /* LoginViewController.swift */,
-				CE098F4124A2088200E5267F /* CardViewController.swift */,
-				CE098F4324A2094300E5267F /* SignedInViewController.swift */,
 			);
 			path = "Fundall UI";
 			sourceTree = "<group>";
@@ -175,7 +211,6 @@
 				CD70616DEFA3C5C68240BAB1 /* Pods-Fundall UI.debug.xcconfig */,
 				05C62F8108A90AB3628829EF /* Pods-Fundall UI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -307,9 +342,13 @@
 				CE098F3E24A207AF00E5267F /* LoginViewController.swift in Sources */,
 				CE81CC3B249E78EB0087C080 /* CustomTextField.swift in Sources */,
 				CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */,
+				CE8E16F724A4E8FB008EC6FE /* extension.swift in Sources */,
 				CE08DD0B24A0D34400D5A0B9 /* DashboardViewController.swift in Sources */,
 				CE057A7724A2D707009B8DDF /* TodayTitleTableViewCell.swift in Sources */,
+				CE8E16FA24A4F30E008EC6FE /* ErrorModel.swift in Sources */,
 				CEAE73E424A3B0FD0096F7B3 /* CardListCell.swift in Sources */,
+				CE8E16FE24A4F344008EC6FE /* RegisterModel.swift in Sources */,
+				CE8E16FC24A4F325008EC6FE /* LoginModel.swift in Sources */,
 				CE098F4224A2088200E5267F /* CardViewController.swift in Sources */,
 				CE057A7524A2CF94009B8DDF /* CardCell.swift in Sources */,
 				CE057A7924A2D72B009B8DDF /* TodayTableViewCell.swift in Sources */,

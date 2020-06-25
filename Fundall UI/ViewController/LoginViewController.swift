@@ -50,4 +50,26 @@ class LoginViewController: UIViewController {
         
     }
     
+    
+    func isValidLogin() -> Bool {
+          
+           if let password = self.passwordTextfield.text {
+               if password.count == 0 {
+                   "Please enter password".toastDisplay()
+                   return false
+               }
+               else if password.count > 0, !self.passwordTextfield.isValidPassword() {
+                   "Please enter minimum 6 digit password".toastDisplay()
+                   return false
+               }
+           }
+          
+           return true
+       }
+    
+    @IBAction func loginClicked(_ sender: Any) {
+        self.view.endEditing(true)
+        if self.isValidLogin() {
+            print("Allah")        }
+    }
 }
