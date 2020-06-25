@@ -12,16 +12,6 @@
 		CE057A7724A2D707009B8DDF /* TodayTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE057A7624A2D707009B8DDF /* TodayTitleTableViewCell.swift */; };
 		CE057A7924A2D72B009B8DDF /* TodayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE057A7824A2D72B009B8DDF /* TodayTableViewCell.swift */; };
 		CE08DD0B24A0D34400D5A0B9 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE08DD0A24A0D34400D5A0B9 /* DashboardViewController.swift */; };
-		CE08DD2D24A15AD400D5A0B9 /* FoundersGrotesk-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2524A15A9B00D5A0B9 /* FoundersGrotesk-Bold.otf */; };
-		CE08DD2E24A15AD800D5A0B9 /* FoundersGrotesk-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2A24A15A9B00D5A0B9 /* FoundersGrotesk-BoldItalic.otf */; };
-		CE08DD2F24A15ADB00D5A0B9 /* FoundersGrotesk-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2424A15A9B00D5A0B9 /* FoundersGrotesk-Light.otf */; };
-		CE08DD3024A15AE800D5A0B9 /* FoundersGrotesk-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2824A15A9B00D5A0B9 /* FoundersGrotesk-Medium.otf */; };
-		CE08DD3124A15AE800D5A0B9 /* FoundersGrotesk-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2624A15A9B00D5A0B9 /* FoundersGrotesk-MediumItalic.otf */; };
-		CE08DD3224A15AE800D5A0B9 /* FoundersGrotesk-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2724A15A9B00D5A0B9 /* FoundersGrotesk-Regular.otf */; };
-		CE08DD3324A15AE800D5A0B9 /* FoundersGrotesk-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2C24A15A9B00D5A0B9 /* FoundersGrotesk-RegularItalic.otf */; };
-		CE08DD3424A15AE800D5A0B9 /* FoundersGrotesk-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2324A15A9A00D5A0B9 /* FoundersGrotesk-Semibold.otf */; };
-		CE08DD3524A15AE800D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2924A15A9B00D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf */; };
-		CE08DD3624A15AEB00D5A0B9 /* FoundersGrotesk-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = CE08DD2B24A15A9B00D5A0B9 /* FoundersGrotesk-LightItalic.otf */; };
 		CE098F3C24A2079300E5267F /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE098F3B24A2079300E5267F /* RegisterViewController.swift */; };
 		CE098F3E24A207AF00E5267F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE098F3D24A207AF00E5267F /* LoginViewController.swift */; };
 		CE098F4224A2088200E5267F /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE098F4124A2088200E5267F /* CardViewController.swift */; };
@@ -53,16 +43,6 @@
 		CE057A7624A2D707009B8DDF /* TodayTitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTitleTableViewCell.swift; sourceTree = "<group>"; };
 		CE057A7824A2D72B009B8DDF /* TodayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayTableViewCell.swift; sourceTree = "<group>"; };
 		CE08DD0A24A0D34400D5A0B9 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
-		CE08DD2324A15A9A00D5A0B9 /* FoundersGrotesk-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Semibold.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Semibold.otf"; sourceTree = "<group>"; };
-		CE08DD2424A15A9B00D5A0B9 /* FoundersGrotesk-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Light.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Light.otf"; sourceTree = "<group>"; };
-		CE08DD2524A15A9B00D5A0B9 /* FoundersGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Bold.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Bold.otf"; sourceTree = "<group>"; };
-		CE08DD2624A15A9B00D5A0B9 /* FoundersGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-MediumItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-MediumItalic.otf"; sourceTree = "<group>"; };
-		CE08DD2724A15A9B00D5A0B9 /* FoundersGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Regular.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Regular.otf"; sourceTree = "<group>"; };
-		CE08DD2824A15A9B00D5A0B9 /* FoundersGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-Medium.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-Medium.otf"; sourceTree = "<group>"; };
-		CE08DD2924A15A9B00D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-SemiboldItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-SemiboldItalic.otf"; sourceTree = "<group>"; };
-		CE08DD2A24A15A9B00D5A0B9 /* FoundersGrotesk-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-BoldItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-BoldItalic.otf"; sourceTree = "<group>"; };
-		CE08DD2B24A15A9B00D5A0B9 /* FoundersGrotesk-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-LightItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-LightItalic.otf"; sourceTree = "<group>"; };
-		CE08DD2C24A15A9B00D5A0B9 /* FoundersGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "FoundersGrotesk-RegularItalic.otf"; path = "../../../../Downloads/New Folder With Items/FoundersGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
 		CE098F3B24A2079300E5267F /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		CE098F3D24A207AF00E5267F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CE098F4124A2088200E5267F /* CardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +57,16 @@
 		CE8E174124A503AF008EC6FE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
 		CE8E174324A503CC008EC6FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		CE8E174524A5040A008EC6FE /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
+		CE8E174824A507AB008EC6FE /* FoundersGrotesk-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-LightItalic.otf"; sourceTree = "<group>"; };
+		CE8E174924A507AB008EC6FE /* FoundersGrotesk-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-Regular.otf"; sourceTree = "<group>"; };
+		CE8E174A24A507AC008EC6FE /* FoundersGrotesk-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-Bold.otf"; sourceTree = "<group>"; };
+		CE8E174B24A507AC008EC6FE /* FoundersGrotesk-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-BoldItalic.otf"; sourceTree = "<group>"; };
+		CE8E174C24A507AC008EC6FE /* FoundersGrotesk-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-Light.otf"; sourceTree = "<group>"; };
+		CE8E174D24A507AC008EC6FE /* FoundersGrotesk-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-Semibold.otf"; sourceTree = "<group>"; };
+		CE8E174E24A507AC008EC6FE /* FoundersGrotesk-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-Medium.otf"; sourceTree = "<group>"; };
+		CE8E174F24A507AD008EC6FE /* FoundersGrotesk-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-MediumItalic.otf"; sourceTree = "<group>"; };
+		CE8E175024A507AD008EC6FE /* FoundersGrotesk-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		CE8E175124A507AD008EC6FE /* FoundersGrotesk-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FoundersGrotesk-RegularItalic.otf"; sourceTree = "<group>"; };
 		CE9A06E5249E3D650099766C /* Fundall UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A06E8249E3D650099766C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9A06EA249E3D650099766C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -118,23 +108,6 @@
 				CEAE73E324A3B0FD0096F7B3 /* CardListCell.swift */,
 			);
 			path = Cell;
-			sourceTree = "<group>";
-		};
-		CE08DD2224A15A0300D5A0B9 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				CE08DD2524A15A9B00D5A0B9 /* FoundersGrotesk-Bold.otf */,
-				CE08DD2A24A15A9B00D5A0B9 /* FoundersGrotesk-BoldItalic.otf */,
-				CE08DD2424A15A9B00D5A0B9 /* FoundersGrotesk-Light.otf */,
-				CE08DD2B24A15A9B00D5A0B9 /* FoundersGrotesk-LightItalic.otf */,
-				CE08DD2824A15A9B00D5A0B9 /* FoundersGrotesk-Medium.otf */,
-				CE08DD2624A15A9B00D5A0B9 /* FoundersGrotesk-MediumItalic.otf */,
-				CE08DD2724A15A9B00D5A0B9 /* FoundersGrotesk-Regular.otf */,
-				CE08DD2C24A15A9B00D5A0B9 /* FoundersGrotesk-RegularItalic.otf */,
-				CE08DD2324A15A9A00D5A0B9 /* FoundersGrotesk-Semibold.otf */,
-				CE08DD2924A15A9B00D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 		CE81CC39249E789A0087C080 /* Views */ = {
@@ -196,6 +169,23 @@
 			path = RegisterViewController;
 			sourceTree = "<group>";
 		};
+		CE8E174724A50782008EC6FE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE8E174A24A507AC008EC6FE /* FoundersGrotesk-Bold.otf */,
+				CE8E174B24A507AC008EC6FE /* FoundersGrotesk-BoldItalic.otf */,
+				CE8E174C24A507AC008EC6FE /* FoundersGrotesk-Light.otf */,
+				CE8E174824A507AB008EC6FE /* FoundersGrotesk-LightItalic.otf */,
+				CE8E174E24A507AC008EC6FE /* FoundersGrotesk-Medium.otf */,
+				CE8E174F24A507AD008EC6FE /* FoundersGrotesk-MediumItalic.otf */,
+				CE8E174924A507AB008EC6FE /* FoundersGrotesk-Regular.otf */,
+				CE8E175124A507AD008EC6FE /* FoundersGrotesk-RegularItalic.otf */,
+				CE8E174D24A507AC008EC6FE /* FoundersGrotesk-Semibold.otf */,
+				CE8E175024A507AD008EC6FE /* FoundersGrotesk-SemiboldItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		CE9A06DC249E3D650099766C = {
 			isa = PBXGroup;
 			children = (
@@ -217,11 +207,11 @@
 		CE9A06E7249E3D650099766C /* Fundall UI */ = {
 			isa = PBXGroup;
 			children = (
+				CE8E174724A50782008EC6FE /* Fonts */,
 				CE8E173C24A501B0008EC6FE /* ViewController */,
 				CE8E16F824A4F2D0008EC6FE /* Model */,
 				CE8E16F524A4E8DC008EC6FE /* Utility */,
 				CE057A7324A2CE6C009B8DDF /* Cell */,
-				CE08DD2224A15A0300D5A0B9 /* Fonts */,
 				CE81CC39249E789A0087C080 /* Views */,
 				CE9A06E8249E3D650099766C /* AppDelegate.swift */,
 				CE9A06EA249E3D650099766C /* SceneDelegate.swift */,
@@ -302,19 +292,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE08DD3124A15AE800D5A0B9 /* FoundersGrotesk-MediumItalic.otf in Resources */,
-				CE08DD3624A15AEB00D5A0B9 /* FoundersGrotesk-LightItalic.otf in Resources */,
 				CE9A06F5249E3D6A0099766C /* LaunchScreen.storyboard in Resources */,
-				CE08DD2E24A15AD800D5A0B9 /* FoundersGrotesk-BoldItalic.otf in Resources */,
-				CE08DD3224A15AE800D5A0B9 /* FoundersGrotesk-Regular.otf in Resources */,
-				CE08DD3324A15AE800D5A0B9 /* FoundersGrotesk-RegularItalic.otf in Resources */,
-				CE08DD2F24A15ADB00D5A0B9 /* FoundersGrotesk-Light.otf in Resources */,
 				CE4392E724A193510074C40B /* Main.storyboard in Resources */,
 				CE9A06F2249E3D6A0099766C /* Assets.xcassets in Resources */,
-				CE08DD2D24A15AD400D5A0B9 /* FoundersGrotesk-Bold.otf in Resources */,
-				CE08DD3524A15AE800D5A0B9 /* FoundersGrotesk-SemiboldItalic.otf in Resources */,
-				CE08DD3424A15AE800D5A0B9 /* FoundersGrotesk-Semibold.otf in Resources */,
-				CE08DD3024A15AE800D5A0B9 /* FoundersGrotesk-Medium.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
