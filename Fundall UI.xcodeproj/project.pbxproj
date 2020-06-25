@@ -32,6 +32,10 @@
 		CE8E16FA24A4F30E008EC6FE /* ErrorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E16F924A4F30E008EC6FE /* ErrorModel.swift */; };
 		CE8E16FC24A4F325008EC6FE /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E16FB24A4F325008EC6FE /* LoginModel.swift */; };
 		CE8E16FE24A4F344008EC6FE /* RegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E16FD24A4F344008EC6FE /* RegisterModel.swift */; };
+		CE8E174024A5038F008EC6FE /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E173F24A5038F008EC6FE /* RegisterPresenter.swift */; };
+		CE8E174224A503AF008EC6FE /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E174124A503AF008EC6FE /* RegisterView.swift */; };
+		CE8E174424A503CC008EC6FE /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E174324A503CC008EC6FE /* LoginView.swift */; };
+		CE8E174624A5040A008EC6FE /* LoginProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8E174524A5040A008EC6FE /* LoginProvider.swift */; };
 		CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06E8249E3D650099766C /* AppDelegate.swift */; };
 		CE9A06EB249E3D650099766C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EA249E3D650099766C /* SceneDelegate.swift */; };
 		CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9A06EC249E3D650099766C /* OnboardingViewController.swift */; };
@@ -69,6 +73,10 @@
 		CE8E16F924A4F30E008EC6FE /* ErrorModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorModel.swift; sourceTree = "<group>"; };
 		CE8E16FB24A4F325008EC6FE /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		CE8E16FD24A4F344008EC6FE /* RegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterModel.swift; sourceTree = "<group>"; };
+		CE8E173F24A5038F008EC6FE /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
+		CE8E174124A503AF008EC6FE /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		CE8E174324A503CC008EC6FE /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		CE8E174524A5040A008EC6FE /* LoginProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProvider.swift; sourceTree = "<group>"; };
 		CE9A06E5249E3D650099766C /* Fundall UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fundall UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9A06E8249E3D650099766C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE9A06EA249E3D650099766C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,13 +167,33 @@
 			isa = PBXGroup;
 			children = (
 				CE08DD0A24A0D34400D5A0B9 /* DashboardViewController.swift */,
-				CE098F3B24A2079300E5267F /* RegisterViewController.swift */,
-				CE098F3D24A207AF00E5267F /* LoginViewController.swift */,
+				CE8E173E24A50346008EC6FE /* RegisterViewController */,
+				CE8E173D24A5032B008EC6FE /* LoginViewController */,
 				CE098F4124A2088200E5267F /* CardViewController.swift */,
 				CE098F4324A2094300E5267F /* SignedInViewController.swift */,
 				CE9A06EC249E3D650099766C /* OnboardingViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		CE8E173D24A5032B008EC6FE /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE098F3D24A207AF00E5267F /* LoginViewController.swift */,
+				CE8E174324A503CC008EC6FE /* LoginView.swift */,
+				CE8E174524A5040A008EC6FE /* LoginProvider.swift */,
+			);
+			path = LoginViewController;
+			sourceTree = "<group>";
+		};
+		CE8E173E24A50346008EC6FE /* RegisterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				CE098F3B24A2079300E5267F /* RegisterViewController.swift */,
+				CE8E173F24A5038F008EC6FE /* RegisterPresenter.swift */,
+				CE8E174124A503AF008EC6FE /* RegisterView.swift */,
+			);
+			path = RegisterViewController;
 			sourceTree = "<group>";
 		};
 		CE9A06DC249E3D650099766C = {
@@ -340,6 +368,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE098F3E24A207AF00E5267F /* LoginViewController.swift in Sources */,
+				CE8E174224A503AF008EC6FE /* RegisterView.swift in Sources */,
 				CE81CC3B249E78EB0087C080 /* CustomTextField.swift in Sources */,
 				CE9A06ED249E3D650099766C /* OnboardingViewController.swift in Sources */,
 				CE8E16F724A4E8FB008EC6FE /* extension.swift in Sources */,
@@ -350,8 +379,11 @@
 				CE8E16FE24A4F344008EC6FE /* RegisterModel.swift in Sources */,
 				CE8E16FC24A4F325008EC6FE /* LoginModel.swift in Sources */,
 				CE098F4224A2088200E5267F /* CardViewController.swift in Sources */,
+				CE8E174624A5040A008EC6FE /* LoginProvider.swift in Sources */,
+				CE8E174024A5038F008EC6FE /* RegisterPresenter.swift in Sources */,
 				CE057A7524A2CF94009B8DDF /* CardCell.swift in Sources */,
 				CE057A7924A2D72B009B8DDF /* TodayTableViewCell.swift in Sources */,
+				CE8E174424A503CC008EC6FE /* LoginView.swift in Sources */,
 				CEAE73E224A3B0CA0096F7B3 /* CardSelectionCell.swift in Sources */,
 				CE098F3C24A2079300E5267F /* RegisterViewController.swift in Sources */,
 				CE9A06E9249E3D650099766C /* AppDelegate.swift in Sources */,
