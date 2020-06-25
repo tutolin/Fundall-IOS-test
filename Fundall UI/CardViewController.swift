@@ -108,6 +108,30 @@ extension CardViewController: UITableViewDataSource, UITableViewDelegate {
         }
         
 }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+          
+          if section == 1 {
+              return  "   Pick a Card"
+          }
+      
+          return ""
+      }
+      func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
+          
+          if section == 1 {
+              let title = UILabel()
+                            title.font = UIFont(name: "FoundersGrotesk-Medium", size: 30.0)!
+                             title.textColor = UIColor.black
+
+                            let header = view as! UITableViewHeaderFooterView
+                            header.textLabel?.font=title.font
+                            header.textLabel?.textColor=title.textColor
+              header.contentView.backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+              }
+         
+      }
+      
 
        
     

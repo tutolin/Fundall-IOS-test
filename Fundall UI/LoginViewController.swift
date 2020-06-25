@@ -10,6 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var passwordTextfield: CustomTextField!
+    @IBOutlet weak var toggleVisibility: UIButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,4 +42,12 @@ class LoginViewController: UIViewController {
                }
         
     }
+    @IBAction func passwordVisibility(_ sender: Any) {
+        passwordTextfield.isSecureTextEntry.toggle()
+        toggleVisibility.isSelected = !toggleVisibility.isSelected
+        
+        
+        
+    }
+    
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DashboardViewController: UIViewController {
+class DashboardViewController: UIViewController, UIGestureRecognizerDelegate{
     
     let transactionImage = [UIImage(named: "Group 49"), UIImage(named: "Group 50"),UIImage(named: "Group 51"),UIImage(named: "Group 52")]
     let transactionAmount = ["₦ 130","₦ 100", "₦ 35", "₦ 30"]
@@ -26,7 +26,7 @@ enum CardState {
     @IBOutlet weak var topBar: UIView!
     @IBOutlet weak var cardView: UIView!
     
-    var visualEffectView:UIVisualEffectView!
+
     
    
         var cardHeight:CGFloat!
@@ -47,8 +47,11 @@ enum CardState {
         var runningAnimations = [UIViewPropertyAnimator]()
         var animationProgressWhenInterrupted:CGFloat = 0
         
+    
+
         override func viewDidLoad() {
             super.viewDidLoad()
+          
             bottomSheetTableview.delegate = self
             bottomSheetTableview.dataSource = self
           
@@ -57,7 +60,9 @@ enum CardState {
             cardHandleAreaHeight = (safeAreaHeight - self.cardView.frame.height) - 120
             
               setupCard()
+
         }
+    
     
     @IBAction func cardRequestPressed(_ sender: Any) {
         if let cardVC = storyboard?.instantiateViewController(withIdentifier: "CardVC") as? CardViewController{
@@ -67,9 +72,7 @@ enum CardState {
     
         
         func setupCard() {
-            visualEffectView = UIVisualEffectView()
-            visualEffectView.frame = self.view.frame
-            self.view.addSubview(visualEffectView)
+           
             
             self.view.addSubview(cardViewController)
             
@@ -78,7 +81,9 @@ enum CardState {
             cardViewController.clipsToBounds = true
             
             let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(DashboardViewController.handleCardTap(recognzier:)))
+         
             let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(DashboardViewController.handleCardPan(recognizer:)))
+            
             
             handleArea.addGestureRecognizer(tapGestureRecognizer)
             handleArea.addGestureRecognizer(panGestureRecognizer)
@@ -149,19 +154,7 @@ enum CardState {
                 cornerRadiusAnimator.startAnimation()
                 runningAnimations.append(cornerRadiusAnimator)
                 
-                let blurAnimator = UIViewPropertyAnimator(duration: duration, dampingRatio: 1) {
-                     switch state {
-                    //                    case .expanded:
-                    //                        self.visualEffectView.effect = UIBlurEffect(style: .dark)
-                                        case .collapsed:
-                                            self.visualEffectView.effect = nil
-                                        default:
-                                            break
-                                        }
-                }
                 
-                blurAnimator.startAnimation()
-                runningAnimations.append(blurAnimator)
                 
             }
         }
@@ -234,7 +227,7 @@ extension DashboardViewController: UITableViewDelegate, UITableViewDataSource {
             
         }
     }
-    
+
     
     
     

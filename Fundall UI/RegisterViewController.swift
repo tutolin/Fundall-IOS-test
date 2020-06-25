@@ -10,9 +10,16 @@ import UIKit
 
 class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var firstNameField: CustomTextField!
+    @IBOutlet weak var lastNameField: CustomTextField!
+    @IBOutlet weak var emailField: CustomTextField!
+    @IBOutlet weak var phoneNumberField: CustomTextField!
+    @IBOutlet weak var passwordField: CustomTextField!
+    @IBOutlet weak var toggleVisibility: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        passwordField.textContentType = .oneTimeCode
         // Do any additional setup after loading the view.
     }
     
@@ -26,6 +33,7 @@ class RegisterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
     @IBAction func backPressed(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
@@ -34,6 +42,14 @@ class RegisterViewController: UIViewController {
         if let loginVC = storyboard?.instantiateViewController(withIdentifier: "LoginVC") as? LoginViewController{
                    self.present(loginVC, animated: true, completion: nil)
         }
-        
+        }
+    @IBAction func registerPressed(_ sender: Any) {
+    }
+    
+    
+    
+    @IBAction func passwordVisiblity(_ sender: Any) {
+        passwordField.isSecureTextEntry.toggle()
+        toggleVisibility.isSelected = !toggleVisibility.isSelected
     }
 }
