@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol LoginView: class{
+     func loginsWithSuccess(loginModel: LoginModel)
+     func loginsWithError(error: Error)
+}

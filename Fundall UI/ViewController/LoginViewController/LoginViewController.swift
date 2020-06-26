@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
 
@@ -14,10 +15,11 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var toggleVisibility: UIButton!
     
     
-    
+    var presenter = LoginPresenter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -69,7 +71,38 @@ class LoginViewController: UIViewController {
     
     @IBAction func loginClicked(_ sender: Any) {
         self.view.endEditing(true)
+        
         if self.isValidLogin() {
-            print("Allah")        }
+            
+            ProgressHUD.show("logging in", interaction: true)
+            presenter.performLogin(email: "test@gmail.com", password: "123456")
+           
+
+        }
+        
     }
+}
+
+extension LoginViewController : LoginView {
+    func loginsWithError(error: Error) {
+        DispatchQueue.main.async {
+            "invalid username or password".toastDisplay()
+        }
+    }
+    
+    func loginsWithSuccess(loginModel: LoginModel) {
+        
+        DispatchQueue.main.asyncAfter(deadline:.now() + 1.0, execute: {
+            "Login Successful".toastDisplay()
+            if let dashboardVC = self.storyboard?.instantiateViewController(withIdentifier: "DashboardVC") as? DashboardViewController{
+                              self.present(dashboardVC, animated: true, completion: nil)
+                   }
+        })
+       
+        
+    }
+    
+    
+    
+    
 }

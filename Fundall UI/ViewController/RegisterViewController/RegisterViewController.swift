@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class RegisterViewController: UIViewController {
 
     @IBOutlet weak var firstNameField: CustomTextField!
@@ -17,8 +18,11 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordField: CustomTextField!
     @IBOutlet weak var toggleVisibility: UIButton!
     
+    var presenter = RegisterPresenter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.delegate = self
         passwordField.textContentType = .oneTimeCode
         // Do any additional setup after loading the view.
     }
@@ -45,6 +49,17 @@ class RegisterViewController: UIViewController {
         }
         }
     @IBAction func registerPressed(_ sender: Any) {
+        
+        self.view.endEditing(true)
+       
+        
+        if self.isValidRegistration() {
+             ProgressHUD.show("signing up", interaction: true)
+                   presenter.performRegister(firstname: firstNameField.text ?? "", lastname: lastNameField.text ?? "", email: emailField.text ?? "", password: passwordField.text ?? "")
+            
+        }
+       
+        
     }
     
     
@@ -104,10 +119,22 @@ class RegisterViewController: UIViewController {
         return true
     }
     
-    @IBAction func registerClicked(_ sender: Any) {
-          self.view.endEditing(true)
-              if self.isValidRegistration() {
-                  print("Allah")        }
-          }
     }
 
+extension RegisterViewController: RegisterView {
+    func registerWithError(error: Error) {
+        print("o ")
+       
+    }
+    
+    func registerWithSuccess(registerModel: RegisterModel) {
+        DispatchQueue.main.asyncAfter(deadline:.now() + 1.0, execute: {
+                   "Registration Successful".toastDisplay()
+                   if let dashboardVC = self.storyboard?.instantiateViewController(withIdentifier: "DashboardVC") as? DashboardViewController{
+                                     self.present(dashboardVC, animated: true, completion: nil)
+                          }
+               })
+    }
+           
+    
+}

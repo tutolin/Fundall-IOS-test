@@ -7,3 +7,8 @@
 //
 
 import Foundation
+
+protocol RegisterView: class{
+     func registerWithSuccess(registerModel: RegisterModel)
+     func registerWithError(error: Error)
+}

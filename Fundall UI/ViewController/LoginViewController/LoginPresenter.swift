@@ -1,5 +1,5 @@
 //
-//  RegisterPresenter.swift
+//  LoginProvider.swift
 //  Fundall UI
 //
 //  Created by Aboyeji Tolulope on 25/06/2020.
@@ -9,25 +9,23 @@
 import Foundation
 
 
-class RegisterPresenter {
-    var delegate: RegisterView?
-    func performRegister(firstname: String, lastname: String, email: String, password: String) {
+
+struct LoginPresenter {
+    
+    var delegate: LoginView?
+    
+    func performLogin(email: String, password: String) {
       
-        if let registerUrl = URL(string: "https://campaign.fundall.io/api/v1/register") {
+        if let loginUrl = URL(string: "https://campaign.fundall.io/api/v1/login") {
             
-            var request = URLRequest(url: registerUrl)
+            var request = URLRequest(url: loginUrl)
 
                    
                    request.httpMethod = "POST"
                    request.setValue("application/json", forHTTPHeaderField: "Content-Type")
                    
-                   let parameters = [
-                    "firstname": firstname,
-                   "lastname": lastname,
-                       "email": email,
-                       "password": password,
-                       "password_confirmation": password
-]
+                   let parameters = ["email": email,
+                                     "password": password]
                     guard let httpBody = try? JSONSerialization.data(withJSONObject: parameters, options: []) else {
                          return
                      }
@@ -36,7 +34,7 @@ class RegisterPresenter {
                      let session = URLSession(configuration: .default)
                      let task = session.dataTask(with: request) { (data, response, error) in
                          if error != nil {
-                            self.delegate?.registerWithError(error: error!)
+                            self.delegate?.loginsWithError(error: error!)
                            
                            "check your internet connection".toastDisplay()
                             ProgressHUD.dismiss()
@@ -45,10 +43,10 @@ class RegisterPresenter {
                        if let data = data {
                                            
                             print(data)
-                        if let register = self.parseJSON(data) {
-                           ProgressHUD.showSucceed()
-                            self.delegate?.registerWithSuccess(registerModel: register)
-                            print(register)
+                        if let login = self.parseJSON(data) {
+                            ProgressHUD.showSucceed()
+                            self.delegate?.loginsWithSuccess(loginModel: login)
+                            print(login)
                             
                         }
                         
@@ -60,11 +58,11 @@ class RegisterPresenter {
         }
      
     }
-    func parseJSON (_ loginData: Data) -> RegisterModel? {
+    func parseJSON (_ loginData: Data) -> LoginModel? {
         
         let decoder = JSONDecoder()
                do{
-                   let decodedData = try decoder.decode(RegisterModel.self, from: loginData)
+                   let decodedData = try decoder.decode(LoginModel.self, from: loginData)
                    return decodedData
                    
                } catch {
@@ -72,4 +70,7 @@ class RegisterPresenter {
                    return nil
                }
     }
+    
 }
+
+
