@@ -10,5 +10,6 @@ import Foundation
 
 protocol LoginView: class{
      func loginsWithSuccess(loginModel: LoginModel)
-     func loginsWithError(error: Error)
+     func loginsWithError(error: String)
+    func errorConnecting(error: Error)
 }

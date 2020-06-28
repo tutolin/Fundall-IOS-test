@@ -122,10 +122,18 @@ class RegisterViewController: UIViewController {
     }
 
 extension RegisterViewController: RegisterView {
-    func registerWithError(error: Error) {
-        print("o ")
-       
+    func errorConnecting(error: Error) {
+         DispatchQueue.main.async {
+                   "please check your internet connection".toastDisplay()
+               }
     }
+    
+    func registerWithError(error: String) {
+        DispatchQueue.main.async {
+            error.toastDisplay()
+        }
+    }
+    
     
     func registerWithSuccess(registerModel: RegisterModel) {
         DispatchQueue.main.asyncAfter(deadline:.now() + 1.0, execute: {

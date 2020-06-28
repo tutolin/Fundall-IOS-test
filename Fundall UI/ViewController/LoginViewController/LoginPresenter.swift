@@ -34,7 +34,7 @@ struct LoginPresenter {
                      let session = URLSession(configuration: .default)
                      let task = session.dataTask(with: request) { (data, response, error) in
                          if error != nil {
-                            self.delegate?.loginsWithError(error: error!)
+                            self.delegate?.errorConnecting(error: error!)
                            
                            "check your internet connection".toastDisplay()
                             ProgressHUD.dismiss()
@@ -48,6 +48,10 @@ struct LoginPresenter {
                             self.delegate?.loginsWithSuccess(loginModel: login)
                             print(login)
                             
+                        }
+                        if let error = self.parseError(data) {
+                            ProgressHUD.dismiss()
+                            self.delegate?.loginsWithError(error: error)
                         }
                         
                            }
@@ -70,6 +74,18 @@ struct LoginPresenter {
                    return nil
                }
     }
+    func parseError (_ errorData: Data) -> String? {
+           
+           let decoder = JSONDecoder()
+                  do{
+                    let decodedData = try decoder.decode(ErrorModel.self, from: errorData)
+                    return decodedData.error.message
+                      
+                  } catch {
+                   
+                      return nil
+                  }
+       }
     
 }
 

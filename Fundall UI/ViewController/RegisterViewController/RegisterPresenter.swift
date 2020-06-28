@@ -36,7 +36,7 @@ class RegisterPresenter {
                      let session = URLSession(configuration: .default)
                      let task = session.dataTask(with: request) { (data, response, error) in
                          if error != nil {
-                            self.delegate?.registerWithError(error: error!)
+                            self.delegate?.errorConnecting(error: error!)
                            
                            "check your internet connection".toastDisplay()
                             ProgressHUD.dismiss()
@@ -50,6 +50,10 @@ class RegisterPresenter {
                             self.delegate?.registerWithSuccess(registerModel: register)
                             print(register)
                             
+                        }
+                        if let error = self.parseError(data) {
+                            ProgressHUD.dismiss()
+                            self.delegate?.registerWithError(error: error)
                         }
                         
                            }
@@ -66,6 +70,18 @@ class RegisterPresenter {
                do{
                    let decodedData = try decoder.decode(RegisterModel.self, from: loginData)
                    return decodedData
+                   
+               } catch {
+                
+                   return nil
+               }
+    }
+    func parseError (_ errorData: Data) -> String? {
+        
+        let decoder = JSONDecoder()
+               do{
+                 let decodedData = try decoder.decode(ErrorModel.self, from: errorData)
+                 return decodedData.error.message
                    
                } catch {
                 

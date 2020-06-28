@@ -27,6 +27,7 @@ class CardViewController: UIViewController {
         super.viewDidLoad()
         self.cardTableView.delegate = self
         self.cardTableView.dataSource = self
+        self.cardTableView.allowsSelection = true
         
 
         // Do any additional setup after loading the view.
@@ -49,14 +50,29 @@ class CardViewController: UIViewController {
 }
 
 
-extension CardViewController: UITableViewDataSource, UITableViewDelegate {
+extension CardViewController: UITableViewDataSource, UITableViewDelegate, didSelectCard {
+    
+    func selectionRow(indexPath: Int) {
+        print(indexPath)
+        let  index = IndexPath(row: indexPath, section: 1)
+        
+
+        cardTableView.selectRow(at: index, animated: true, scrollPosition: .none)
+
+         
+    }
+    
+    
+    
    func numberOfSections(in tableView: UITableView) -> Int {
            return 2
        }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return 1} else {
+            return 1
+            
+        } else {
             return 3
         }
     }
@@ -64,6 +80,7 @@ extension CardViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CardSelectionCell") as? CardSelectionCell
+            cell?.delegate = self
             
             return cell ?? UITableViewCell()
             
@@ -85,27 +102,30 @@ extension CardViewController: UITableViewDataSource, UITableViewDelegate {
    
            
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        if indexPath.section == 1 {
             if self.lastSelection != nil {
-                self.cardTableView.cellForRow(at: self.lastSelection)?.accessoryType = .none
-            }
+                           self.cardTableView.cellForRow(at: self.lastSelection)?.accessoryType = .none
+                       }
 
-        self.cardTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+                   self.cardTableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
 
-            self.lastSelection = indexPath
-        self.cardTableView.deselectRow(at: indexPath, animated: true)
-        if indexPath.row == 0{
-            openSubView()
+                       self.lastSelection = indexPath
+                   self.cardTableView.deselectRow(at: indexPath, animated: true)
+                   if indexPath.row == 0{
+                       openSubView()
+                       
+                   }
+                   if indexPath.row == 1{
+                       openSubView()
+                       
+                   }
+                   if indexPath.row == 2{
+                       openSubView()
+                       
+                   }
             
         }
-        if indexPath.row == 1{
-            openSubView()
-            
-        }
-        if indexPath.row == 2{
-            openSubView()
-            
-        }
+           
         
 }
     

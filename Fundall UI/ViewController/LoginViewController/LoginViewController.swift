@@ -84,11 +84,18 @@ class LoginViewController: UIViewController {
 }
 
 extension LoginViewController : LoginView {
-    func loginsWithError(error: Error) {
+    func errorConnecting(error: Error) {
         DispatchQueue.main.async {
-            "invalid username or password".toastDisplay()
+            "please check your internet connection".toastDisplay()
         }
     }
+    
+    func loginsWithError(error: String) {
+        DispatchQueue.main.async {
+            error.toastDisplay()
+        }
+    }
+    
     
     func loginsWithSuccess(loginModel: LoginModel) {
         

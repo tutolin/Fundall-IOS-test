@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol didSelectCard {
+    func selectionRow(indexPath: Int)
+}
+
 class CardSelectionCell: UITableViewCell {
 
     @IBOutlet weak var cardSelectionCollectionView: UICollectionView!
     
+    var delegate: didSelectCard?
     let cardName = ["Lifestyle Pro","Lifestyle Premium", "Lifestyle Business"]
     
     override func awakeFromNib() {
@@ -45,6 +50,10 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 }
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        self.delegate?.selectionRow(indexPath: indexPath.row)
     }
 }
 

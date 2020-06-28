@@ -10,5 +10,6 @@ import Foundation
 
 protocol RegisterView: class{
      func registerWithSuccess(registerModel: RegisterModel)
-     func registerWithError(error: Error)
+     func errorConnecting(error: Error)
+     func registerWithError(error: String)
 }
