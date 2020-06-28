@@ -75,7 +75,7 @@ class LoginViewController: UIViewController {
         if self.isValidLogin() {
             
             ProgressHUD.show("logging in", interaction: true)
-            presenter.performLogin(email: "test@gmail.com", password: "123456")
+            presenter.performLogin(email: "test@gmail.com", password: passwordTextfield.text ?? " ")
            
 
         }
